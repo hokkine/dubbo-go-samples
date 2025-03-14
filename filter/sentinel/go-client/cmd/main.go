@@ -61,7 +61,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	// Register a state change listener so that we could observe the state change of the internal circuit breaker.
+	// Register a state change listener so that we could observe the state change of the internal circuit breaker
 	circuitbreaker.RegisterStateChangeListeners(&stateChangeTestListener{})
 	_, err = circuitbreaker.LoadRules([]*circuitbreaker.Rule{
 		// Statistic time span=1s, recoveryTimeout=1s, maxErrorRatio=40%
