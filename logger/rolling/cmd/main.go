@@ -26,7 +26,7 @@ import (
 	"github.com/dubbogo/gost/log/logger"
 )
 
-// need to setup environment variable "DUBBO_GO_CONFIG_PATH" to "conf/dubbogo.yml" before run
+// need to set up environment variable "DUBBO_GO_CONFIG_PATH" to "conf/dubbogo.yml" before run
 func main() {
 	if err := dubbo.Load(); err != nil {
 		panic(err)
